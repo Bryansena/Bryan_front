@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+</head>
+<body>
+    <header>
+        <h1>Cinema</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cartaz.html">Em cartaz</a></li>
+            <li><a href="ingressos.html">Ingressos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <img src="../imagens/ingressos.jpg" alt="Ingressos de Cinema" width="180">
+        
+        <h2>Ingressos</h2>
+        <form method="get">
+        Contato: <input type="text" name="ctt" size="30" maxlength="30" placeholder="Nome para Contato" autofocus required>
+        CPF: <input type="text" name="cpf" size="14" maxlength="14" placeholder="CPF">
+        E-mail: <input type="email" name="email" size="30" maxlength="30" placeholder="E-mail">
+        telefone: <input type="texto" name="tel" size="15" maxlength="15" placeholder="(99) 99999-9999">
+        <br><br/>
+            Filmes: <select name="Filmes" required>
+                <option value="" selected disabled>escolha...</option>
+                <option value="alien" >Alien</option>
+                <option value="bad" >Bad Boys</option>
+                <option value="coringa" >Coringa</option>
+                <option value="deadpool" >Deadpool</option>
+                <option value="divertida" >Divertida Mente</option>
+                <option value="malvado" >Meu Malvado Favorito</option>
+            </select>
+            sala:
+                <input type="radio" name="sala" value="td">3D
+                <input type="radio" name="sala" value="imax">IMAX
+                <input type="radio" name="sala" value="pre">Premium
+            <br><br/>
+            Quatidade:  
+                <input type="number"  min="1" max="10" name="qtd">
+                <input type="checkbox" name="meia">Meia entrada?
+            <br><br/>   
+            Observações:
+            <textarea name="obs" cols="50" rows="4" placeholder="Se houver, preencha aqui as observações"></textarea>
+            <br><br/>
+            <input type="submit" value="Solicitar" />
+            <input type="reset" value="Limpar" />
+            </form>
+
+
+    </main>   
+</body>
+</html>
